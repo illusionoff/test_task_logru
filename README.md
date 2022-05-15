@@ -16,13 +16,13 @@ Test task of the company Logru
 
 Использовал облачную BD.
 Для документирования использовал Swagger.  В нем можно проверить работу всех маршрутов.
-[http://test_task_logru.178.20.42.150.sslip.io:3020/docs/api](http://test_task_logru.178.20.42.150.sslip.io:3020/docs/api)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/docs/api](http://test_task_logru.178.20.42.150.sslip.io:3020/docs/api)  
 http://localhost:3020/docs/api
 
 В задании использовал JWT токен. Реализовал продление токена при любом запросе авторизованного пользователя путем генерации нового JWT токена. JWT новый  токен (accessToken) отправляется при каждом запросе пользователя  при помощи RefreshInterceptor
 
 * 0. > Корневой маршрут GET
-[http://test_task_logru.178.20.42.150.sslip.io:3020](http://test_task_logru.178.20.42.150.sslip.io:3020)
+[http://test_task_logru.178.20.42.150.sslip.io:3020](http://test_task_logru.178.20.42.150.sslip.io:3020)  
  http://localhost:3020  
 * 1. >Для регистрацию по POST маршруту:
 [http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup](http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup)  
