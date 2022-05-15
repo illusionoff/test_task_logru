@@ -23,12 +23,12 @@ http://localhost:3020/docs/api
 
 * 0. > Корневой маршрут GET
 [http://test_task_logru.178.20.42.150.sslip.io:3020](http://test_task_logru.178.20.42.150.sslip.io:3020)
- http://localhost:3020
+ http://localhost:3020  
 * 1. >Для регистрацию по POST маршруту:
-[http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup](http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup](http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signup)  
  http://localhost:3020/auth/signup
 * 2. >Для авторизации POST 
-[http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signin](http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signin)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signin](http://test_task_logru.178.20.42.150.sslip.io:3020/auth/signin)  
 http://localhost:3020/auth/signin
 Body:
 	username
@@ -44,15 +44,15 @@ Body:
 ##### *В целях тестирования на своем сервере: [test_task_logru](http://test_task_logru.178.20.42.150.sslip.io:3020) срок действия токена составляет 60 секунд*
 
 * 3. > API получения id, username авторизованного пользователя GET:
-[http://test_task_logru.178.20.42.150.sslip.io:3020/api/me](http://test_task_logru.178.20.42.150.sslip.io:3020/api/me)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/api/me](http://test_task_logru.178.20.42.150.sslip.io:3020/api/me)  
 http://localhost:3020/api/me 
 * 4. >API вывода списка пользователей GET:
-[http://test_task_logru.178.20.42.150.sslip.io:3020/api/users](http://test_task_logru.178.20.42.150.sslip.io:3020/api/users)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/api/users](http://test_task_logru.178.20.42.150.sslip.io:3020/api/users)  
  http://localhost:3020/api/users
 
 * 5. >API редактирования данных пользователя PUT.
 Выбор пользователя по имени.
-[http://test_task_logru.178.20.42.150.sslip.io:3020/api/edit](http://test_task_logru.178.20.42.150.sslip.io:3020/api/edit)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/api/edit](http://test_task_logru.178.20.42.150.sslip.io:3020/api/edit)  
 http://localhost:3020/api/edit
 Body:
 	usernamefind
@@ -61,7 +61,7 @@ Body:
 
 * 6. >API удаления пользователя DELETE.
 Выбор пользователя по имени.
-[http://test_task_logru.178.20.42.150.sslip.io:3020/api/delete](http://test_task_logru.178.20.42.150.sslip.io:3020/api/delete)
+[http://test_task_logru.178.20.42.150.sslip.io:3020/api/delete](http://test_task_logru.178.20.42.150.sslip.io:3020/api/delete)  
 http://localhost:3020/api/delete
 Body:
 	usernamefind
