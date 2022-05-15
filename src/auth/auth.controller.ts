@@ -2,6 +2,7 @@ import { Body, Controller, Post, Request, UseGuards, ValidationPipe } from '@nes
 
 import { AuthService } from './auth.service';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
+import { SigninCredentialDto } from './dto/signin-credentials.dto';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 
 @Controller('auth')
@@ -15,7 +16,7 @@ export class AuthController {
 
   @UseGuards(LocalAuthGuard)
   @Post('signin')
-  async signIn(@Request() req) {
+  async signIn(@Body(ValidationPipe) signinCredentialDto: SigninCredentialDto, @Request() req) {
     console.log('signin');
     return this.authService.signIn(req.user);
   }

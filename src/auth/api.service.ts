@@ -11,12 +11,12 @@ export class ApiService {
     return user;
   }
 
-  async getUsers() {
+  async getUsers(): Promise<any> {
     const users = await this.userModel.find({}, { password: false, __v: false });
     return users;
   }
 
-  async editUser(user) {
+  async editUser(user): Promise<any> {
     const foundUser = await this.userModel.findOneAndUpdate(
       { username: user.usernamefind },
       { country: user.editCountry, city: user.editCity },
